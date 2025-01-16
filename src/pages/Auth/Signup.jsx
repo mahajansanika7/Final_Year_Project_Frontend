@@ -1,5 +1,5 @@
 import { useState } from "react";
-import toast from "react-hot-toast";
+// import toast from "react-hot-toast";
 import { Link, useNavigate } from "react-router-dom";
 import { createAccount } from "../../Redux/Slices/AuthSlice";
 import { useDispatch } from "react-redux";
@@ -60,6 +60,7 @@ function Signup() {
     const apiResponse = await dispatch(createAccount(signUpState));
     console.log(apiResponse);
     if (apiResponse.payload.data.success) {
+      // toast.success("Registration Successfull!");
       navigate("/auth/signin");
     }
   }
