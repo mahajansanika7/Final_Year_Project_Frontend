@@ -61,7 +61,8 @@ const a = async (event) => {
   }
 
   try {
-    const factoryAddress = "0x2A6E75985EF4280fC823dcdb9cE7946Cb5A67e9c"; // Replace with actual address
+    const factoryAddress = "0xFAae2E0bE213629F62D352CFa2cbF1fa7Eab268e"; // Replace with actual address
+    // 0x2A6E75985EF4280fC823dcdb9cE7946Cb5A67e9c
     // const ton = {value:ethers.utils.parseEther("0.001")}
     // const amount = {value:ethers.utils.parseEther("0.001")}
 
