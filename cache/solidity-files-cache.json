@@ -1,0 +1,41 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "Y:\\React\\Final_Year_Project_Frontend\\contracts\\FarmerToFactory.sol": {
+      "lastModificationDate": 1737033878113,
+      "contentHash": "82883fd477dfa88b1f05a9d74d5f1c81",
+      "sourceName": "contracts/FarmerToFactory.sol",
+      "solcConfig": {
+        "version": "0.8.20",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.18"
+      ],
+      "artifacts": [
+        "FarmerToFactory"
+      ]
+    }
+  }
+}
