@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import abi from "../contractJson/FarmerToFactory.json";
 // import { ethers } from 'ethers';
 import { ethers } from "ethers";
+import toast from "react-hot-toast";
 
 const FactoryList = () => {
   const [state, setState] = useState({
@@ -77,9 +78,17 @@ const a = async (event) => {
       amount // Pass `value` as part of the overrides object
     );
 
-    await transaction.wait();
-
-    alert("Proposal sent successfully to the contract!");
+     // Use toast.promise for waiting the transaction and showing appropriate messages
+     await toast.promise(
+      transaction.wait(), // Wait for the transaction to be mined
+      {
+        loading: "Hold back tight, we are processing your proposal...",
+        success: "Proposal sent successfully to the Factory!",
+        error: "Oops! Something went wrong. Please try again.",
+      }
+    );
+    await new Promise(resolve => setTimeout(resolve, 2000));
+    // Optionally, reload the page after success
     window.location.reload();
   } catch (error) {
     console.error("Error sending proposal:", error);
