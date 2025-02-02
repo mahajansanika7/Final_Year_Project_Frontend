@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import abi from "../contractJson/FarmerToFactory.json";
 // import { ethers } from 'ethers';
 import { ethers } from "ethers";
-import toast from "react-hot-toast";//sanikA
+import toast from "react-hot-toast";//sanika1
 
 const FactoryList = () => {
   const [state, setState] = useState({
@@ -10,7 +10,7 @@ const FactoryList = () => {
     signer: null,
     contract: null,
   });
-
+//sanika
   const [account, setAccount] = useState("Not connected");
 
   useEffect(() => {
