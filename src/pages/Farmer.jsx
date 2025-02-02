@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import abi from "../contractJson/FarmerToFactory.json";
 // import { ethers } from 'ethers';
 import { ethers } from "ethers";
-import toast from "react-hot-toast";
+import toast from "react-hot-toast";//sanikA
 
 const FactoryList = () => {
   const [state, setState] = useState({
